@@ -7,3 +7,49 @@ html,body{
     height: 100%;
     width: 100%;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    border: 10px solid black;
+    position: relative;
+}
+.clock ul li{
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(var(--i) * 30deg));
+    inset: 5px;
+}
+.clock ul li span{
+    transform: rotate(calc(var(--i) * -30deg));
+    display: inline-block;
+}
+.clock::after{
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+.needle{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.needle span{
+    position: absolute;
+    width: var(--w);
+    height: var(--h);
+    background-color: black;
+    border-radius: 3px;
+}

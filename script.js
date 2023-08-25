@@ -5,13 +5,13 @@ function updateClock() {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    const hourDeg = (hours * 30) + (0.5 * minutes)+90;
-    const minuteDeg = (minutes * 6) + (0.1 * seconds)+90;
-    const secondDeg = seconds * 6+90;
+    const hourDeg = (hours * 30) + (0.5 * minutes);
+    const minuteDeg = (minutes * 6) + (0.1 * seconds);
+    const secondDeg = seconds * 6;
 
-    const hourHand = document.querySelector('.hour-hand');
-    const minuteHand = document.querySelector('.minute-hand');
-    const secondHand = document.querySelector('.second-hand');
+    const hourHand = document.querySelector('.hr');
+    const minuteHand = document.querySelector('.mn');
+    const secondHand = document.querySelector('.sc');
 
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
     minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
