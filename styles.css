@@ -24,12 +24,12 @@ body{
 }
 .hour-hand, .minute-hand, .second-hand{
     position: absolute;
-    width: 40%;
+    width: 50%;
     transform-origin: 100%;
     background-color: #333;
     transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
     top: 50%;
-    left: 10%;
+    /* left: 10%; */
     border-radius: 3px;
 }
 .hour-hand{
@@ -65,15 +65,16 @@ body{
     transform-origin: center;
     transform: translate(-50%, -50%);
 }
+
 .number:nth-child(1) { transform: translate(50%, 5%) rotate(-30deg); }
-.number:nth-child(2) { transform: translate(110%, 0%) rotate(0deg); }
-.number:nth-child(3) { transform: translate(110%, 0%) rotate(30deg); }
-.number:nth-child(4) { transform: translate(110%, 0%) rotate(60deg); }
-.number:nth-child(5) { transform: translate(110%, 0%) rotate(90deg); }
-.number:nth-child(6) { transform: translate(110%, 0%) rotate(120deg); }
-.number:nth-child(7) { transform: translate(110%, 0%) rotate(150deg); }
-.number:nth-child(8) { transform: translate(110%, 0%) rotate(180deg); }
-.number:nth-child(9) { transform: translate(110%, 0%) rotate(210deg); }
-.number:nth-child(10) { transform: translate(110%, 0%) rotate(240deg); }
-.number:nth-child(11) { transform: translate(110%, 0%) rotate(270deg); }
-.number:nth-child(12) { transform: translate(110%, 0%) rotate(300deg); }
+.number:nth-child(2) { transform: translate(80%, 20%) rotate(0deg); }
+.number:nth-child(3) { transform: translate(95%, 50%) rotate(30deg); }
+.number:nth-child(4) { transform: translate(80%, 80%) rotate(60deg); }
+.number:nth-child(5) { transform: translate(50%, 95%) rotate(90deg); }
+.number:nth-child(6) { transform: translate(20%, 80%) rotate(120deg); }
+.number:nth-child(7) { transform: translate(5%, 50%) rotate(150deg); }
+.number:nth-child(8) { transform: translate(20%, 20%) rotate(180deg); }
+.number:nth-child(9) { transform: translate(50%, 10%) rotate(210deg); }
+.number:nth-child(10) { transform: translate(80%, 20%) rotate(240deg); }
+.number:nth-child(11) { transform: translate(90%, 50%) rotate(270deg); }
+.number:nth-child(12) { transform: translate(80%, 80%) rotate(300deg); }
